@@ -1,0 +1,35 @@
+/* CSS Code by SKCro */
+/* note from awes145: thank you skcro */
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap');  /* Import Montserrat font from Google */
+
+body{
+    margin:0;
+    font-family:Comic Neue,Helvetica,MS Sans Serif,Arial,sans-serif; /* Use Montserrat first, then use other fonts as fallbacks in case it can't be loaded */
+    font-size:18pt;
+    font-weight:400;
+    text-align:center;
+    background-repeat: no-repeat;
+    color:#020202; /* Set font color to off-black */
+    background:linear-gradient(#ff0600,#ff6a00,#ff6a00,#ff0600) #ff6a00;
+    background-size:100vw 100vh;
+    text-shadow:2px 2px 1px #0004;
+}
+
+a,a:visited{color:#040404;}
+::selection{
+    border:1px solid #000d;
+    background:#000a;
+    color:#f0f0f0;
+    text-shadow:2px 2px 1px #000;
+}
+
+code{
+    font-family:Consolas,monospace; /* Use monospace font for codeblocks */
+    margin:8px 0;
+    border:1px solid #000d;
+    border-radius:8px;
+    padding:4px;
+    color:#f0f0f0;
+    text-shadow:2px 2px 1px #000;
+    background:#0008; /* Use half-transparent background for codeblocks */
+}
