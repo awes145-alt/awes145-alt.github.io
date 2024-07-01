@@ -1,8 +1,103 @@
-<html>
-  <title>UninstallYourComputer</title>
-  <link rel="stylesheet" href="styles.css">
+<html><head><base href="https://uninstallyourcomputer.com">
+<title>UninstallYourComputer - Home of Portjnt 370!</title>
+<style>
+  body {
+    font-family: 'Comic Sans MS', cursive;
+    background-color: #FF6600;
+    color: #000000;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+  }
+  h1 {
+    font-size: 48px;
+    text-shadow: 3px 3px #FFFF00;
+  }
+  .feature {
+    background-color: #FFFF00;
+    border: 3px dashed #000000;
+    border-radius: 15px;
+    padding: 15px;
+    margin: 20px auto;
+    max-width: 600px;
+  }
+  .download-btn {
+    background-color: #00FF00;
+    border: none;
+    color: #000000;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    margin: 20px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    animation: pulse 2s infinite;
+  }
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+  }
+  .blink {
+    animation: blinker 1s linear infinite;
+  }
+  @keyframes blinker {
+    50% { opacity: 0; }
+  }
+  #virus-count {
+    font-size: 36px;
+    font-weight: bold;
+    color: #FF0000;
+  }
+</style>
+</head>
+<body>
   <h1>UninstallYourComputer</h1>
   <h2>hoem of the portjnt 370!</h2>
-  <br>
-  <p>our amaezing anti viral softwar, portjnt 370, is antivirus with many include feature, liek:</p>
-</html>
+  
+  <div class="feature">
+    <h3>our amaezing anti viral softwar, portjnt 370, is antivirus with many include feature, liek:</h3>
+    <ul>
+      <li>REAL-TIME VIRUS SCANING!!1!</li>
+      <li>FIREWALL PROTECSHUN</li>
+      <li>EMAIL SCANING</li>
+      <li>WEB BROWSING SHEILD</li>
+      <li>AUTOMATIC UPDATS</li>
+    </ul>
+  </div>
+  
+  <div class="feature">
+    <h3 class="blink">WARNIGN: <span id="virus-count">9,999,999</span> VIRUSES DETECTED ON YOUR COMPUTER!!1!</h3>
+    <p>DOWNLOAD PORTJNT 370 NOW TO FIX!!</p>
+  </div>
+  
+  <a href="https://uninstallyourcomputer.com/download" class="download-btn">DOWNLOAD NOW!!</a>
+  
+  <div class="feature">
+    <h3>TESTIMONIALS:</h3>
+    <p>"after instaling portjnt 370, my computer runs 1000x faster!!" - John D.</p>
+    <p>"i havent had a single virus since i got portjnt 370!" - Jane S.</p>
+    <p>"best $499.99 ive ever spent on software!" - Bob T.</p>
+  </div>
+  
+  <nav>
+    <a href="https://uninstallyourcomputer.com/about">ABOUT US</a> |
+    <a href="https://uninstallyourcomputer.com/support">SUPPORT</a> |
+    <a href="https://uninstallyourcomputer.com/affiliates">BECOME AN AFFILIATE</a>
+  </nav>
+  
+  <script>
+    setInterval(function() {
+      var count = Math.floor(Math.random() * 1000000) + 9000000;
+      document.getElementById('virus-count').innerText = count.toLocaleString();
+    }, 3000);
+    
+    document.querySelector('.download-btn').addEventListener('click', function(e) {
+      e.preventDefault();
+      alert("CONGRATULATIONS! You've won a FREE iPad! Click OK to claim your prize!");
+      window.location.href = "https://uninstallyourcomputer.com/download";
+    });
+  </script>
+</body></html>
